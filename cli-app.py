@@ -3,8 +3,8 @@ import app
 application = app.App()
 menu_list = [
     {"menu": "compress video", "command": application.compress_video},
-    {"menu": "convert video format", "command": None},
-    {"menu": "convert audio format", "command": None},
+    {"menu": "convert video format", "command": application.build},
+    {"menu": "convert audio format", "command": application.build},
     {"menu": "extract audio from video", "command": application.extract_audio_from_video},
     {"menu": "remove audio from video", "command": application.remove_audio_from_video},
     {"menu": "trim video", "command": application.trim_video},
